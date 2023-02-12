@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Formulário Intermediário</title>
+</head>
+<body>
+   <div class="page">
+       
+       <header>
+           <div class="1">
+               <h1>MENTORIA</h1>
+               <p>Preencha o formulário abaixo para agendar sua mentoria</p>
+           </div>
+       </header>
+       <form id="formulario" >
+           <fieldset>
+               <div class="forms-fieldset">
+                   <div class="info">
+                       <legend>INFORMAÇÕES PESSOAIS</legend>
+
+                       <div class="line"></div>
+
+                       <div class="input-name description">
+                           <div class="input-wrapper">
+                               <label for="name">Nome</label>
+                               <input id="name" type="text">
+                           </div>
+
+                           <div class="input-wrapper">
+                               <label for="last-name">Sobrenome</label>
+                               <input id="last-name" type="text">
+                           </div>
+                       </div>
+
+                       <div class="email description">
+                           <label for="email">Email <span>(digite um email válido)</span></label>
+                           <input  class="inputs-email" type="email" name="email" id="email">
+                           <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                           <input class="inputs-email" type="password" name="password" id="password">
+                       </div>
+                   </div>
+                   <div class="info description">
+                       <legend>INFORMAÇÕES DO MENTOR</legend>
+                       <div class="line"></div>
+                       <label for="mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                       <input id="mentor" name="mentor" type="text">
+                   </div>
+                   <div class="info">
+                       <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+                       <div class="description">
+                           <h2>PRIMEIRA MENTORIA</h2>
+                           <div class="line"></div>
+                           <div class="col-3">
+                               <div class="col ">
+                                   <label for="date1">Data <span>(DD/MM/AAA)</span></label>
+                                   <input class="col-date" id="date1" name="data1" type="date">
+                               </div>
+
+                               <div class="col">
+                                   <label for="timein1">Das</label>
+                                   <input class="col-das input-date" id="timein1" name="timein1" type="time">
+                               </div>
+
+                               <div class="col">
+                                   <label for="timeout1">Até</label>
+                                   <input class="input-date input-marg" id="timeout1" name="timeout1" type="time">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="description">
+                           <h2>SEGUNDA MENTORIA</h2>
+                           <div class="line"></div>
+                           <div class="col-3">
+                               <div class="col">
+                                   <label for="date2">Data <span>(DD/MM/AAA)</span></label>
+                                   <input class="col-date input-appaerence" id="date2" name="data2" type="date">
+                               </div>
+
+                               <div class="col">
+                                   <label for="timein2">Das</label>
+                                   <input class="col-das input-date input-appaerence" id="timein2" name="timein2" type="time">
+                               </div>
+
+                               <div class="col">
+                                   <label for="timeout2">Até</label>
+                                   <input class="input-date input-marg input-appaerence" id="timeout2" name="timeout2" type="time">
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </fieldset>
+       </form>
+       <footer>
+           <input id="salvar" form="formulario" type="submit" value="SALVAR">
+       </footer>
+   </div>
+
+</body>
+</html>
